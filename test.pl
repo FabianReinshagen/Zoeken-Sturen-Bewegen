@@ -21,8 +21,7 @@ play_turn:-
 	board(Pos),
 	pretty_print,
 	nl,
-	write('Your turn: '),
-	read(Turn),
+	user_input(Turn),
 	X is Turn-1,
 	ins(o, Pos, X, NewPos),
 	retract(board(Pos)),
@@ -74,14 +73,24 @@ outcome(Val):-
 	write('Its a draw.').
 
 
+user_input(X):-
+	write('Your Turn: '),
+	read(X),
+	integer(X),
+	X > 0,
+	X < 10.
+
+user_input(X):-
+	write('Not a valid input.'),
+	nl,
+	user_input(X).
 
 
 
 
 
 
-
-% The move/2 predicate which takes a board
+% The Move/2 Predicate Which takes a board
 % configuration for the tic-tac-toe game and
 % returns a list of all possible follow-up
 % board configurations.
