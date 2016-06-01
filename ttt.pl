@@ -1,7 +1,7 @@
 % Search, Navigate & Actuate
 % Assignment Tic-Tac-Toe
 % 30-5-2016
-% Jim Badrie 10465553 & Fabian Reinshage
+% Jim Badrie 10465553 & Fabian Reinshagen 10689214
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %                                                      %
